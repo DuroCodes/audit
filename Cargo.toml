@@ -1,0 +1,20 @@
+[package]
+categories = ["command-line-utilities", "development-tools"]
+description = "A tool to validate Advent of Code solutions"
+edition = "2021"
+keywords = ["advent-of-code", "aoc", "validation"]
+license = "MIT"
+name = "audit"
+repository = "https://github.com/durocodes/audit"
+version = "0.1.0"
+
+[[bin]]
+name = "aud"
+path = "src/main.rs"
+
+[dependencies]
+atty = "0.2.14"
+clap = {version = "4.5.21", features = ["derive"]}
+serde = {version = "1.0.215", features = ["derive"]}
+thiserror = "2.0.3"
+toml = "0.8.19"

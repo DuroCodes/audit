@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["solutions"],
+  "properties": {
+    "solutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["day", "part1", "part2"],
+        "properties": {
+          "day": { "type": "integer", "minimum": 1, "maximum": 25 },
+          "part1": { "type": "string" },
+          "part2": { "type": "string" }
+        }
+      }
+    }
+  }
+}

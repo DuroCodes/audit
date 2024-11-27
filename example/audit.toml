@@ -1,0 +1,11 @@
+"$schema" = "../schema.json" # <- optional for editor support
+
+[[solutions]]
+day = 1
+part1 = "42"
+part2 = "123"
+
+[[solutions]]
+day = 2
+part1 = "100"
+part2 = "200"
