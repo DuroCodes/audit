@@ -16,7 +16,15 @@ You can use `cargo install audit-cli` to install the CLI tool on your system, wi
 ## Usage
 
 1. Create a configuration file in your project (default: `.audit.toml`)
-2. Run `aud` with your advent of code program, such as `aud python day1.py`
+2. Make sure your advent of code solutions print to the standard output, such as:
+
+```
+Day 1
+Part 1: 123
+Part 2: 456
+```
+
+4. Run `aud` with your advent of code program, such as `aud python day1.py`
 
 > [!TIP]
 > You can also pass `aud` as a pipe, such as `python day1.py | aud`
