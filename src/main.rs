@@ -30,7 +30,7 @@ fn main() {
         }
     };
 
-    let result = match (cli.command.is_empty(), std::io::stdout().is_terminal()) {
+    let result = match (cli.command.is_empty(), std::io::stdin().is_terminal()) {
         (true, true) => Err("No input provided. Use either a pipe or provide a command.".into()),
         (true, false) => runner::from_pipe(),
         (false, _) => runner::from_command(&cli.command),
