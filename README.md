@@ -44,3 +44,5 @@ part2 = "012"
 ## Example
 
 You can find a minimal example in the `example` directory, which contains a Python "solution" and a configuration file.
+
+The example can be run with `python runner.py | aud` (make sure you're in the `example` directory)
