@@ -3,6 +3,7 @@ mod runner;
 mod validator;
 
 use clap::Parser;
+use std::io::IsTerminal;
 
 #[derive(Parser)]
 struct Cli {
@@ -29,7 +30,7 @@ fn main() {
         }
     };
 
-    let result = match (cli.command.is_empty(), atty::is(atty::Stream::Stdin)) {
+    let result = match (cli.command.is_empty(), std::io::stdout().is_terminal()) {
         (true, true) => Err("No input provided. Use either a pipe or provide a command.".into()),
         (true, false) => runner::from_pipe(),
         (false, _) => runner::from_command(&cli.command),
