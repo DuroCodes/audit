@@ -6,7 +6,7 @@ keywords = ["advent-of-code", "aoc", "validation"]
 license = "MIT"
 name = "audit-cli"
 repository = "https://github.com/durocodes/audit"
-version = "0.1.0"
+version = "0.1.1"
 
 [[bin]]
 name = "aud"
