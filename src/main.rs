@@ -11,7 +11,7 @@ struct Cli {
         short,
         long,
         default_value = "audit.toml",
-        help = "Path to config file (default: audit.toml)"
+        help = "Path to config file"
     )]
     config: String,
 
